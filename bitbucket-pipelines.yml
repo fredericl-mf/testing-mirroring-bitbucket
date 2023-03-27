@@ -6,6 +6,6 @@ pipelines:
         clone:
           enabled: false
         script:
-          - git clone --bare git@bitbucket.org:fredericl-mf/testing-mirroring-bitbucket.git
+          - git clone --bare --branch master git@bitbucket.org:fredericl-mf/testing-mirroring-bitbucket.git
           - cd testing-mirroring-bitbucket.git
           - git push --mirror git@github.com:fredericl-mf/testing-mirroring-bitbucket.git
